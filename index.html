@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+  <title>Survey Form</title>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1 id="title">Survey Form</h1>
+      <p id="description">Thank you for taking the time to help us improve the platform</p>
+    </header>
+    <form id="survey-form">
+      <div id="form-group">
+        <label id="name-label">Name</label>
+        <input id="name" class="form-control" type="text" placeholder="Enter your name" required></input>
+      </div>
+      <div id="form-group">
+        <label id="email-label">Email</label>
+        <input id="email" class="form-control" type="email" placeholder="Enter your email" required></input>
+      </div>
+      <div id="form-group">
+        <label id="number-label">Age (optional)</label>
+        <input id="number" type="number" class="form-control" placeholder="Age" min="13" max="100"></input>
+      </div>
+      <div id="form-group">
+        <label id="birthdate">Date of Birth</label>
+        <input id="birthdate" type="date" class="form-control">
+      </div>
+      <div id="form-group">
+        <label id="time">Time</label>
+        <input id="time" type="time" class="form-control">
+      </div>
+      <div id="form-group">
+        <p>Which best describes your gender?</p>
+        <select id="dropdown" class="form-control" name="role" required="">
+          <option value="" disabled="" selected="">Select an option</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="transgender">Transgender</option>
+          <option value="non-binary">Non-binary</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div id="form-group">
+        <p>Would you recommend us to a friend?</p>
+        <label><input class="input-radio" type="radio" checked="" name="user-recommend"
+            value="definitely">Definitely</label>
+        <label><input class="input-radio" type="radio" checked="" name="user-recommend" value="maybe">Maybe</label>
+        <label><input class="input-radio" type="radio" checked="" name="user-recommend" value="not-sure">Not
+          sure</label>
+      </div>
+      <div id="form-group">
+        <p>What is your favorite feature?</p>
+        <select id="favorite" class="form-control" name="favorite" required="">
+          <option disabled="" selected="" value="">Select an option</option>
+          <option value="feature-1">Feature-1</option>
+          <option value="feature-2">Feature-2</option>
+          <option value="feature-3">Feature-3</option>
+          <option value="featrue-4">Feature-4</option>
+        </select>
+      </div>
+      <div id="form-group">
+        <p>What would you like to see improved? (check all that apply)</p>
+        <label><input class="input-checkbox" type="checkbox" name="prefer" value="section-1">Section 1</label>
+        <label><input class="input-checkbox" type="checkbox" name="prefer" value="section-2">Section 2</label>
+        <label><input class="input-checkbox" type="checkbox" name="prefer" value="section-3">Section 3</label>
+        <label><input class="input-checkbox" type="checkbox" name="prefer" value="section-4">Section 4</label>
+        <label><input class="input-checkbox" type="checkbox" name="prefer" value="section-5">Section 5</label>
+        <label><input class="input-checkbox" type="checkbox" name="prefer" value="section-6">Section 6</label>
+        <label><input class="input-checkbox" type="checkbox" name="prefer" value="section-7">Section 7</label>
+        <label><input class="input-checkbox" type="checkbox" name="prefer" value="section-8">Section 8</label>
+        <label><input class="input-checkbox" type="checkbox" name="prefer" value="section-9">Section 9</label>
+        <label><input class="input-checkbox" type="checkbox" name="prefer" value="section-10">Section 10</label>
+      </div>
+      <div id="form-group">
+        <p>Any comments or suggestions?</p>
+        <textarea id="comments" class="input-textarea" placeholder="Enter your comment here..."></textarea>
+      </div>
+      <div id="form-group">
+        <button id="submit" class="submit-button" type="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>
